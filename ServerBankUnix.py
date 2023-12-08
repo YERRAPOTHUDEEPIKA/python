@@ -475,10 +475,10 @@ def dbopen():
 def send_the_mail(customer_email, pdfname, messtext, mess_subject):
 	receiver = customer_email
 	message = MIMEMultipart()
-	message['From'] = "idle_trigger@kappsoft.com"
+	message['From'] = "abcd@example.com"
 	message['To'] = receiver
 	message['Subject'] =  mess_subject
-	sender = "idle_trigger@kappsoft.com"
+	sender = "iabcd@example.com"
 	empassword = "dR7*CPcJ2DZ=<bJX"
 	message.attach(MIMEText(messtext, 'plain'))
 	# open the pdf file in binary
